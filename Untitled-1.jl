@@ -52,7 +52,6 @@ df[df[:, "top genre"] .== "plugg", "top genre"] .= "rap"
 df[df[:, "top genre"] .== "electro swing", "top genre"] .= "electronic"
 
 
-
 # drop the missing in top genre 
 df = df[.!ismissing.(df[:, "top genre"]), :]
 
